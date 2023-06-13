@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022012226单雨晴</title>
+    <style>
+        body{
+            background-color: #d5f3f4;
+            width: 100%;
+            height: 100%;
+        }
+        .container{
+            position: relative;
+            /* 层定位 */
+            width: 1000px;
+            margin: 0px auto;
+            /* css盒子模型的居中 */
+            background-color: white;
+        }
+        #head{
+            position: relative;
+            width: 80%;
+            margin: 0px auto;
+            height: 100px;
+        }
+        #headimg{
+            width: 100px;
+            float: left;
+            vertical-align: middle;
+            /* css图片样式居中 */
+        }
+        h1{
+            margin: 30px 50px;
+            float: left;
+            /* css的浮动布局 */
+            color: rgb(47, 76, 223);
+            text-shadow: 1px 3px 16px #c4c8ff;
+            /* css文字阴影 */
+            letter-spacing: 2px;
+        }
+        .nav{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            background: rgb(17, 116, 196);
+        }
+        .nav a{
+            display: inline-block;
+            /* 文档流定位：不单独占一行 */
+            margin: 0px 85px;
+            text-decoration: none;
+            font-size: 16px;
+            color: #fff;
+        }
+        .nav a:hover{
+            color: #a1a8dd;
+            text-decoration: underline;
+            /* css点击后改变颜色，加文字下划线 */
+        }
+    </style>
+    <!-- js的弹出 -->
+    <script>
+        window.onload=function(){
+            var oBtn=document.getElementById('btn');
+            oBtn.onclick=function(){
+                alert("请访问微信小程序“xx”填写报名表");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div id="head">
+            <img src="img/logo.jpg" id="headimg"/>
+            <h1>东北师范大学--网页兴趣小组</h1>
+        </div>
+        <div class="nav">
+            <ul>
+                <a href="/首页.html">首页</a>
+                <a href="/小组详情.html">小组详情</a>
+                <a href="/小组论坛.html">小组论坛</a>
+                <a href="/加入我们.html">加入我们</a>
+            </ul>
+        </div>
+        <input type="button" value="报名" id="btn">
+    </div>
+</body>
+</html>
